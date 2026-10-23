@@ -1,298 +1,282 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Space+Mono:wght@400;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet"/>
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Space+Mono:wght@400;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@100..900&family=Space+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed-variant": "#004f54", "inverse-on-surface": "#293042", "on-primary-container": "#705900", "primary-fixed": "#ffe087", "on-surface-variant": "#d1c5ac", "tertiary-fixed": "#ffdada", "primary-container": "#ffd027", "on-tertiary-fixed": "#40000c", "outline-variant": "#4e4633", "on-tertiary": "#680019", "on-primary": "#3c2f00", "on-secondary": "#00363a", "error-container": "#93000a", "outline": "#9a9078", "surface-bright": "#32394b", "on-error-container": "#ffdad6", "on-primary-fixed": "#231a00", "surface-container-low": "#141b2c", "on-background": "#dbe2fa", "on-secondary-container": "#00686f", "inverse-primary": "#735c00", "on-surface": "#dbe2fa", "primary-fixed-dim": "#efc110", "on-primary-fixed-variant": "#574500", "surface-container-high": "#232a3b", "secondary-container": "#00eefc", "primary": "#fff0cf", "error": "#ffb4ab", "surface-dim": "#0c1324", "on-secondary-fixed": "#002022", "background": "#0c1324", "inverse-surface": "#dbe2fa", "surface-container-lowest": "#070e1e", "secondary": "#d3fbff", "surface-container": "#181f30", "tertiary-fixed-dim": "#ffb3b5", "surface-tint": "#efc110", "on-tertiary-container": "#b70d35", "tertiary-container": "#ffc7c8", "surface": "#0c1324", "surface-variant": "#2e3447", "on-tertiary-fixed-variant": "#920027", "on-error": "#690005", "secondary-fixed-dim": "#00dbe9", "secondary-fixed": "#7df4ff", "surface-container-highest": "#2e3447", "tertiary": "#ffeded" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1rem", "margin-desktop": "2.5rem", "gutter-desktop": "1.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem", "margin": "1rem" }, "fontFamily": { "code-metric": ["Space Mono"], "display-hero": ["Space Grotesk"], "body-md": ["Space Mono"], "headline-lg": ["Space Grotesk"], "body-sm": ["Space Mono"], "display-hero-mobile": ["Space Grotesk"], "headline-md": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "body-lg": ["Space Mono"], "label-badge": ["Space Grotesk"] }, "fontSize": { "code-metric": ["20px", { "lineHeight": "24px", "letterSpacing": "0.05em", "fontWeight": "700" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.04em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-badge": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface text-on-surface min-h-screen flex flex-col font-body-md text-body-md select-none"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Abort or Go Back" class="w-11 h-11 flex items-center justify-center rounded bg-surface-container text-on-surface active:translate-y-0.5 transition-transform" onclick="history.back()"><span class="material-symbols-outlined text-xl">arrow_back</span></button><img alt="Don't Trust The Button Mascot Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5SmmxRmmuzyf7lEfgAFi312b-YZYGSe2q94fXWL65Bl2HAeQ70XaDorLDA5LR_qbnrmPYL3RarIuLTZhHFUZkI94nVs51mvU90mVUias156AvivO-cSG25pUqi4iBPcPKRcpPOqW6OwRS2h6lm4BW468xj0qrhhLhsZrk8fBfm26FX7fzYvehdHjxaTluMzGWQ8yPw07Sq0Xjh3tZLXGnWT9txWp4srA54eUHTYNHlDpIcrbE4KRX"/><h1 class="font-headline-sm text-headline-sm text-primary uppercase tracking-wide">Live Puzzle Stage</h1></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded bg-surface-container text-primary-container"><span class="material-symbols-outlined text-primary-container text-base">alarm</span><span class="font-code-metric text-body-sm text-primary-container">00:45</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-surface pt-16 pb-safe px-gutter flex flex-col relative"><div class="flex flex-col w-full pb-6 space-y-4">
-<!-- HUD Station Bar -->
-<div class="bg-surface-container-high rounded-xl p-3 shadow-xl">
-<div class="flex items-center justify-between gap-2 mb-2">
-<div class="flex items-center gap-1.5 min-w-0">
-<span class="px-2 py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-badge text-label-badge uppercase tracking-wider">STAGE 04</span>
-<span class="font-headline-sm text-headline-sm text-primary truncate">LOOK AWAY NOW</span>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@100..900&family=Space+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed-variant": "#004f54", "inverse-on-surface": "#293042", "on-primary-container": "#705900", "primary-fixed": "#ffe087", "on-surface-variant": "#d1c5ac", "tertiary-fixed": "#ffdada", "primary-container": "#ffd027", "on-tertiary-fixed": "#40000c", "outline-variant": "#4e4633", "on-tertiary": "#680019", "on-primary": "#3c2f00", "on-secondary": "#00363a", "error-container": "#93000a", "outline": "#9a9078", "surface-bright": "#32394b", "on-error-container": "#ffdad6", "on-primary-fixed": "#231a00", "surface-container-low": "#141b2c", "on-background": "#dbe2fa", "on-secondary-container": "#00686f", "inverse-primary": "#735c00", "on-surface": "#dbe2fa", "primary-fixed-dim": "#efc110", "on-primary-fixed-variant": "#574500", "surface-container-high": "#232a3b", "secondary-container": "#00eefc", "primary": "#fff0cf", "error": "#ffb4ab", "surface-dim": "#0c1324", "on-secondary-fixed": "#002022", "background": "#0c1324", "inverse-surface": "#dbe2fa", "surface-container-lowest": "#070e1e", "secondary": "#d3fbff", "surface-container": "#181f30", "tertiary-fixed-dim": "#ffb3b5", "surface-tint": "#efc110", "on-tertiary-container": "#b70d35", "tertiary-container": "#ffc7c8", "surface": "#0c1324", "surface-variant": "#2e3447", "on-tertiary-fixed-variant": "#920027", "on-error": "#690005", "secondary-fixed-dim": "#00dbe9", "secondary-fixed": "#7df4ff", "surface-container-highest": "#2e3447", "tertiary": "#ffeded" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1rem", "margin-desktop": "2.5rem", "gutter-desktop": "1.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem", "margin": "1rem" }, "fontFamily": { "code-metric": ["Space Mono"], "display-hero": ["Space Grotesk"], "body-md": ["Space Mono"], "headline-lg": ["Space Grotesk"], "body-sm": ["Space Mono"], "display-hero-mobile": ["Space Grotesk"], "headline-md": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "body-lg": ["Space Mono"], "label-badge": ["Space Grotesk"] }, "fontSize": { "code-metric": ["20px", { "lineHeight": "24px", "letterSpacing": "0.05em", "fontWeight": "700" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.04em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-badge": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface text-on-surface min-h-screen flex flex-col font-body-md text-body-md select-none"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="Don't Trust The Button Mascot Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5SmmxRmmuzyf7lEfgAFi312b-YZYGSe2q94fXWL65Bl2HAeQ70XaDorLDA5LR_qbnrmPYL3RarIuLTZhHFUZkI94nVs51mvU90mVUias156AvivO-cSG25pUqi4iBPcPKRcpPOqW6OwRS2h6lm4BW468xj0qrhhLhsZrk8fBfm26FX7fzYvehdHjxaTluMzGWQ8yPw07Sq0Xjh3tZLXGnWT9txWp4srA54eUHTYNHlDpIcrbE4KRX"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary-container tracking-wider uppercase leading-none drop-shadow-[0_2px_0px_#141923]">NO TRUST</span><span class="font-label-badge text-label-badge text-secondary tracking-widest uppercase">Trophy Room</span></div></div><div class="flex items-center gap-space-sm"><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-xs rounded bg-surface-container-high text-secondary"><span class="material-symbols-outlined text-secondary-container text-base">battery_charging_full</span><span class="font-code-metric text-body-sm text-secondary-container">100%</span></div><div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded bg-surface-container text-primary-container"><span class="material-symbols-outlined text-primary-container text-base">monetization_on</span><span class="font-code-metric text-body-sm text-primary-container">999</span></div><button aria-label="Toggle Sound" class="w-11 h-11 flex items-center justify-center rounded bg-surface-container-high text-on-surface active:translate-y-0.5 transition-transform"><span class="material-symbols-outlined text-xl">volume_up</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-surface pt-16 pb-24 px-gutter flex flex-col relative"><div class="flex flex-col w-full relative pb-8 space-y-4">
+<!-- Interactive Confetti Canvas Overlay -->
+<canvas class="pointer-events-none absolute inset-0 z-30 w-full h-full" id="victoryConfettiCanvas"></canvas>
+<!-- Arcade Marquee Header Banner -->
+<div class="relative w-full overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-xl">
+<div class="absolute -top-10 -right-10 w-32 h-32 rounded-full bg-secondary-container/10 blur-2xl"></div>
+<div class="absolute -bottom-8 -left-8 w-28 h-28 rounded-full bg-primary-container/10 blur-xl"></div>
+<div class="relative z-10 flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded bg-tertiary-container text-on-tertiary-container shadow-md">
+<span class="material-symbols-outlined text-base animate-pulse">stars</span>
+<span class="font-label-badge text-label-badge uppercase tracking-widest">WORLD CLEAR • ALL 8 CHAMBERS PURGED</span>
 </div>
-<div class="flex items-center gap-1 shrink-0">
-<button aria-label="Toggle Sound" class="w-8 h-8 rounded bg-surface-container-highest text-secondary flex items-center justify-center active:scale-95 transition-transform" id="btn-sound">
-<span class="material-symbols-outlined text-[18px]">volume_up</span>
-</button>
-<button aria-label="Pause Level" class="w-8 h-8 rounded bg-surface-container-highest text-primary flex items-center justify-center active:scale-95 transition-transform" id="btn-pause">
-<span class="material-symbols-outlined text-[18px]">pause</span>
-</button>
-</div>
-</div>
-<!-- HUD Sub-bar: Timer, Tries, Score -->
-<div class="grid grid-cols-3 gap-2 pt-1">
-<div class="bg-surface-container-lowest rounded-lg p-2 flex flex-col items-center justify-center">
-<span class="font-body-sm text-body-sm text-outline uppercase tracking-wider text-[10px]">TIME LEFT</span>
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined text-secondary text-sm">timer</span>
-<span class="font-code-metric text-code-metric text-secondary tracking-widest text-base" id="countdown">18.4s</span>
+<h1 class="mt-space-xs font-display-hero-mobile text-display-hero-mobile uppercase text-primary-container drop-shadow-[0_4px_0px_#070e1e] tracking-tight">
+        VICTORY ROYALE!
+      </h1>
+<p class="font-code-metric text-body-sm text-secondary-container tracking-wider uppercase">
+        SYSTEM STATUS: SUSPICION MAXIMUM
+      </p>
 </div>
 </div>
-<div class="bg-surface-container-lowest rounded-lg p-2 flex flex-col items-center justify-center">
-<span class="font-body-sm text-body-sm text-outline uppercase tracking-wider text-[10px]">ATTEMPTS</span>
-<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-code-metric text-body-sm">03/05</span>
+<!-- Grumpy Button Mascot Podium Showcase -->
+<div class="relative w-full rounded-xl bg-surface-container-high p-space-md shadow-lg flex flex-col items-center">
+<!-- Dialogue Bubble -->
+<div class="relative z-10 w-full max-w-sm mb-3">
+<div class="rounded-lg bg-surface-container p-space-sm text-center shadow-md">
+<p class="font-body-md text-body-md text-on-surface italic leading-snug">
+          “Fine. You really pressed zero traps and questioned everything. You win forever. Happy now?!”
+        </p>
 </div>
-<div class="bg-surface-container-lowest rounded-lg p-2 flex flex-col items-center justify-center">
-<span class="font-body-sm text-body-sm text-outline uppercase tracking-wider text-[10px]">SCORE</span>
-<span class="font-code-metric text-body-lg text-primary-container font-bold">1,420</span>
+<!-- Speech bubble caret -->
+<div class="w-0 h-0 mx-auto border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[8px] border-t-surface-container -mt-0.5"></div>
+</div>
+<!-- Defeated Mascot on Winner's Podium -->
+<div class="relative flex flex-col items-center">
+<!-- Mascot Disc -->
+<div class="relative w-36 h-36 flex items-center justify-center">
+<!-- Golden Aura Rings -->
+<div class="absolute inset-0 rounded-full bg-primary-container/20 animate-ping opacity-60"></div>
+<div class="absolute -inset-1 rounded-full bg-secondary-container/30 blur-sm"></div>
+<img class="relative z-10 w-32 h-32 rounded-full object-contain shadow-2xl drop-shadow-[0_8px_16px_rgba(0,0,0,0.6)]" data-alt="Mischievous vintage 90s arcade round yellow button mascot wearing a tiny lopsided cardboard jester crown, grumpy sulking face, crossed tiny arms, glowing neon cyan and electric gold borders, dark comic sticker vector style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZEXxB2Tf2BtSUArKe0AD3aDEs2ByPMgcQtQG8YM6aCQVRWc1ZrykGq4kYFjNPspfuO9AjnCdO02hP4--UzxaP94058RGM2UKdJEYNxH-15BIWrXkGKFEptslyaSDXrHAZshG54IJuE7hamfklRU3kjdYSvLDC193-nM4n-jcVRrd_WzVXjw26mwqFgZVWb46JSt0kAqzCLaQgDEyJqqaWWb9-UKhj3jzLYiICJ3CyXcRuma5d1ZVx"/>
+<!-- Tiny Floating Jester Crown Badge -->
+<div class="absolute -top-3 right-4 z-20 px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-badge text-body-sm shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">crown</span>
+<span>SULK KING</span>
+</div>
+</div>
+<!-- Tier 1 Podium -->
+<div class="w-56 mt-2 rounded-t-lg bg-surface-container-lowest p-space-xs text-center shadow-inner">
+<div class="flex items-center justify-center gap-1 text-primary-container font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-xl">military_tech</span>
+<span>NO. 1 PARANOIAC</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block uppercase tracking-wider">Unfooled Legend</span>
 </div>
 </div>
 </div>
-<!-- Cheeky Mission Objective Tape -->
-<div class="relative bg-primary rounded-xl p-3 shadow-md text-on-primary overflow-hidden">
-<div class="absolute -right-3 -top-3 w-12 h-12 bg-primary-fixed-dim/30 rounded-full blur-sm pointer-events-none"></div>
-<div class="flex items-start gap-2.5">
-<div class="w-7 h-7 rounded-lg bg-on-tertiary-container text-tertiary-fixed flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
-<span class="material-symbols-outlined text-base">warning</span>
+<!-- Central Cream Arcade Faceplate / Champion Certificate -->
+<div class="relative w-full rounded-xl bg-primary text-on-primary p-space-md shadow-2xl overflow-hidden">
+<!-- Faux Hazard Warning Edge Ribbon -->
+<div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-error via-primary-container to-secondary-container"></div>
+<div class="flex flex-col items-center text-center mt-1">
+<div class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-lowest text-primary-container shadow-md">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+<span class="font-label-badge text-label-badge uppercase tracking-wider">Official Certificate of Extreme Skepticism</span>
 </div>
-<div class="min-w-0 flex-1">
-<div class="flex items-center gap-2 mb-0.5">
-<span class="font-label-badge text-label-badge uppercase tracking-wider bg-tertiary-fixed text-on-tertiary-fixed px-1.5 py-0.2 rounded font-bold">PROTOCOL</span>
-<span class="font-body-sm text-body-sm text-on-primary-fixed-variant font-bold flex items-center gap-1" id="eye-status-badge">
-<span class="w-2 h-2 rounded-full bg-error animate-ping"></span> EYE IS WATCHING
+<h2 class="mt-2 font-headline-lg text-headline-lg uppercase text-on-primary tracking-tight">
+        THE ULTIMATE SKEPTIC!
+      </h2>
+<p class="font-body-md text-body-md text-on-primary/80 mt-0.5 max-w-xs">
+        All 8 Stages Beaten Without Getting Fooled by a Single Shiny Button.
+      </p>
+<!-- 24/24 Star Array -->
+<div class="mt-3 flex items-center justify-center gap-1 bg-surface-container-lowest/15 px-3 py-1.5 rounded-lg w-full max-w-xs">
+<span class="font-code-metric text-body-md text-on-primary font-bold">STARS:</span>
+<div class="flex text-on-primary-container">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-code-metric text-body-sm text-on-primary font-bold ml-1">24/24</span>
+</div>
+<!-- Master Stats Matrix -->
+<div class="mt-4 grid grid-cols-2 gap-space-sm w-full text-left">
+<!-- Stat Item 1 -->
+<div class="rounded-lg bg-surface-container-lowest p-space-sm shadow-md">
+<span class="font-label-badge text-body-sm text-secondary-container uppercase flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">timer</span> TIME PURGED
           </span>
+<div class="font-code-metric text-code-metric text-primary-container mt-1">
+            03:42.8
+          </div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">Top 0.2% worldwide</span>
 </div>
-<p class="font-body-md text-body-md text-on-primary leading-tight font-medium">
-          Press the green button... wait! <span class="underline decoration-2 font-bold text-on-tertiary-container">NEVER press while the eye is open!</span>
-</p>
+<!-- Stat Item 2 -->
+<div class="rounded-lg bg-surface-container-lowest p-space-sm shadow-md">
+<span class="font-label-badge text-body-sm text-secondary-container uppercase flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">shield</span> TRAPS EVADED
+          </span>
+<div class="font-code-metric text-code-metric text-secondary-container mt-1">
+            32 / 32
+          </div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">100% Deceptions Skipped</span>
 </div>
+<!-- Stat Item 3 -->
+<div class="rounded-lg bg-surface-container-lowest p-space-sm shadow-md">
+<span class="font-label-badge text-body-sm text-secondary-container uppercase flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">military_tech</span> SKEPTIC RANK
+          </span>
+<div class="font-code-metric text-code-metric text-tertiary-fixed mt-1">
+            RANK S+
+          </div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">Grand Paranoiac Master</span>
 </div>
-</div>
-<!-- Main Arcade Puzzle Chassis -->
-<div class="relative bg-surface-container rounded-2xl p-4 shadow-2xl flex flex-col items-center justify-between min-h-[390px] overflow-hidden">
-<!-- Faux Hardware Neon Trace Lines & Circuit Decals -->
-<svg class="absolute inset-0 w-full h-full pointer-events-none opacity-25" xmlns="http://www.w3.org/2000/svg">
-<path class="text-secondary-container" d="M 20 40 H 120 V 160 H 40" fill="none" stroke="currentColor" stroke-dasharray="4 4" stroke-width="2"></path>
-<path class="text-secondary-container" d="M 320 60 H 260 V 220 H 300" fill="none" stroke="currentColor" stroke-dasharray="4 4" stroke-width="2"></path>
-<circle class="text-secondary-container" cx="120" cy="160" fill="currentColor" r="4"></circle>
-<circle class="text-secondary-container" cx="260" cy="220" fill="currentColor" r="4"></circle>
-</svg>
-<!-- Top Chassis Bank: Decoys & Diagnostic Lights -->
-<div class="w-full flex items-center justify-between z-10">
-<!-- Decoy Switch A -->
-<button class="decoy-btn group flex flex-col items-center bg-surface-container-high active:bg-surface-container-highest px-3 py-2 rounded-xl shadow-md transition-all active:translate-y-1">
-<span class="font-label-badge text-label-badge text-on-surface-variant group-hover:text-primary">SW-01</span>
-<div class="w-7 h-4 bg-surface-container-lowest rounded-full p-0.5 mt-1 flex items-center">
-<div class="w-3 h-3 rounded-full bg-outline"></div>
-</div>
-<span class="text-[10px] font-body-sm text-outline mt-0.5">PRESS ME</span>
-</button>
-<!-- Central Mascots Speech Balloon -->
-<div class="relative bg-primary-container text-on-primary-container px-3 py-1.5 rounded-xl shadow-lg max-w-[170px] text-center transform -rotate-2">
-<span class="font-body-sm text-body-sm font-bold block leading-snug" id="speech-bubble-text">
-          "Trust me... I wouldn't lie to you! ;)"
-        </span>
-<div class="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-primary-container rotate-45"></div>
-</div>
-<!-- Decoy Switch B -->
-<button class="decoy-btn group flex flex-col items-center bg-surface-container-high active:bg-surface-container-highest px-3 py-2 rounded-xl shadow-md transition-all active:translate-y-1">
-<span class="font-label-badge text-label-badge text-on-surface-variant group-hover:text-primary">SW-02</span>
-<div class="w-7 h-4 bg-surface-container-lowest rounded-full p-0.5 mt-1 flex items-center justify-end">
-<div class="w-3 h-3 rounded-full bg-secondary-fixed"></div>
-</div>
-<span class="text-[10px] font-body-sm text-secondary mt-0.5">SAFE?</span>
-</button>
-</div>
-<!-- Centerpiece: The Mischief Mascot Push-Button Hero Device -->
-<div class="relative flex flex-col items-center justify-center my-3 z-10">
-<!-- Glowing Target Aura -->
-<div class="absolute w-52 h-52 rounded-full bg-primary-container/20 blur-xl animate-pulse" id="aura"></div>
-<!-- Tactile Chassis Collar -->
-<div class="relative w-44 h-44 rounded-full bg-surface-container-lowest shadow-[0_12px_24px_rgba(0,0,0,0.6)] flex items-center justify-center p-2">
-<!-- Mechanical Outer Ring -->
-<div class="w-full h-full rounded-full bg-surface-container-high flex items-center justify-center p-1.5 shadow-inner">
-<!-- The Giant Yellow Button -->
-<button aria-label="Giant Push Button Mascot" class="relative w-full h-full rounded-full bg-primary-container text-on-primary flex flex-col items-center justify-center shadow-[0_8px_0_0_#705900] active:shadow-[0_2px_0_0_#705900] active:translate-y-1.5 transition-all outline-none select-none overflow-hidden group" id="the-button">
-<!-- Glare highlight ribbon -->
-<div class="absolute top-2 left-6 right-6 h-5 rounded-full bg-primary-fixed/40 pointer-events-none"></div>
-<!-- Mascot Face Artwork (Expressive Eyes & Smug Grin) -->
-<div class="relative flex flex-col items-center justify-center pointer-events-none">
-<!-- Googly Eyes Pair -->
-<div class="flex items-center gap-2 mb-1">
-<!-- Left Eye -->
-<div class="relative w-7 h-8 bg-surface-bright rounded-full flex items-center justify-center shadow-inner overflow-hidden">
-<div class="w-3.5 h-3.5 bg-surface-container-lowest rounded-full transition-transform duration-100 transform translate-x-0.5 translate-y-0.5 flex items-center justify-center" id="pupil-left">
-<div class="w-1 h-1 bg-surface rounded-full self-start mr-0.5 mt-0.5"></div>
-</div>
-<!-- Eyelid Lid (Winks/Closes) -->
-<div class="absolute inset-0 bg-primary-container transform -translate-y-full transition-transform duration-200" id="eyelid-left"></div>
-</div>
-<!-- Right Eye -->
-<div class="relative w-7 h-8 bg-surface-bright rounded-full flex items-center justify-center shadow-inner overflow-hidden">
-<div class="w-3.5 h-3.5 bg-surface-container-lowest rounded-full transition-transform duration-100 transform translate-x-0.5 translate-y-0.5 flex items-center justify-center" id="pupil-right">
-<div class="w-1 h-1 bg-surface rounded-full self-start mr-0.5 mt-0.5"></div>
-</div>
-<!-- Eyelid Lid (Winks/Closes) -->
-<div class="absolute inset-0 bg-primary-container transform -translate-y-full transition-transform duration-200" id="eyelid-right"></div>
+<!-- Stat Item 4 -->
+<div class="rounded-lg bg-surface-container-lowest p-space-sm shadow-md">
+<span class="font-label-badge text-body-sm text-secondary-container uppercase flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">scoreboard</span> TOTAL SCORE
+          </span>
+<div class="font-code-metric text-code-metric text-primary-container mt-1">
+            18,950
+          </div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">Bonus +5,000 Zero-Click</span>
 </div>
 </div>
-<!-- Smug Mischievous Smile -->
-<svg class="w-10 h-5 text-on-primary-container" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3" viewbox="0 0 40 20">
-<path d="M 6 4 Q 22 22 34 8"></path>
-<path d="M 31 7 L 35 12"></path>
-</svg>
-</div>
-<!-- Arcade Stamp Label -->
-<span class="font-headline-sm text-[11px] tracking-widest text-on-primary-container uppercase font-black mt-1">PUSH ME</span>
-</button>
-</div>
-</div>
-</div>
-<!-- Bottom Secondary Decoys & The Suspicious Green Button -->
-<div class="w-full grid grid-cols-3 gap-2 items-center z-10 pt-1">
-<!-- Coral Danger / Self Destruct Lever -->
-<button aria-label="Self Destruct Lever" class="flex flex-col items-center justify-center p-2 rounded-xl bg-error-container text-on-error-container shadow-md active:translate-y-0.5 transition-transform" id="danger-lever">
-<span class="material-symbols-outlined text-lg">dangerous</span>
-<span class="font-label-badge text-[9px] uppercase tracking-wider font-bold">ABORT</span>
-</button>
-<!-- The Real Target: The Flickering "Green" Button Trap -->
-<div class="flex flex-col items-center">
-<button aria-label="Target Button" class="w-16 h-16 rounded-2xl bg-secondary-container text-on-secondary-fixed shadow-[0_5px_0_0_#00686f] active:shadow-[0_1px_0_0_#00686f] active:translate-y-1 transition-all flex flex-col items-center justify-center p-1 group" id="green-button">
-<span class="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform">touch_app</span>
-<span class="font-label-badge text-[9px] tracking-wider uppercase font-black">STRIKE</span>
-</button>
-<span class="font-body-sm text-[10px] text-secondary mt-1 font-bold" id="target-label">TARGET</span>
-</div>
-<!-- Decoy Push Button 3 -->
-<button class="decoy-btn flex flex-col items-center justify-center p-2 rounded-xl bg-surface-container-high text-on-surface-variant shadow-md active:translate-y-0.5 transition-transform">
-<span class="material-symbols-outlined text-lg text-primary">toggle_on</span>
-<span class="font-label-badge text-[9px] uppercase tracking-wider">BYPASS</span>
-</button>
-</div>
-</div>
-<!-- Bottom Action & Helper Deck -->
-<div class="grid grid-cols-2 gap-3 pt-1">
-<button class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-surface-container-high text-primary shadow-md active:translate-y-0.5 transition-transform" id="btn-hint">
-<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
-<span class="material-symbols-outlined text-sm">lightbulb</span>
-</div>
-<div class="flex flex-col items-start text-left">
-<span class="font-headline-sm text-body-sm uppercase font-bold leading-none">USE HINT</span>
-<span class="font-body-sm text-[10px] text-outline mt-0.5 leading-none">2 LEFT (-50 PTS)</span>
-</div>
-</button>
-<button class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-surface-container text-error shadow-md active:translate-y-0.5 transition-transform" id="btn-reset">
-<span class="material-symbols-outlined text-base">restart_alt</span>
-<span class="font-headline-sm text-body-sm uppercase font-bold tracking-wider">RESET STAGE</span>
-</button>
-</div>
-<!-- Feedback Toast Alert Banner -->
-<div class="hidden w-full bg-error-container text-on-error-container p-3 rounded-xl shadow-lg flex items-center justify-between animate-bounce" id="toast-banner">
+<!-- Faux Wax Seal of Skepticism -->
+<div class="mt-4 flex items-center justify-between w-full pt-2">
 <div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-xl">sentiment_very_dissatisfied</span>
-<span class="font-body-md text-body-sm font-bold" id="toast-msg">CAUGHT! The mascot was watching you!</span>
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-bold shadow-md">
+<span class="material-symbols-outlined text-xl">gavel</span>
 </div>
-<span class="font-code-metric text-xs uppercase px-1.5 py-0.5 bg-on-error text-error rounded">-1 LIFE</span>
+<div class="flex flex-col text-left">
+<span class="font-label-badge text-body-sm uppercase text-on-primary">AUDITED BY</span>
+<span class="font-code-metric text-body-sm text-on-primary/80">Anti-Trickery Board</span>
+</div>
+</div>
+<div class="px-2.5 py-1 rounded bg-surface-container-lowest text-primary-container font-code-metric text-body-sm">
+          HASH: 0xSKEPTIC88
+        </div>
+</div>
+</div>
+</div>
+<!-- Interactive Victory Action Hub -->
+<div class="flex flex-col space-y-space-sm w-full">
+<!-- Main Giant Tactile Arcade CTA Button -->
+<button class="group relative w-full rounded-xl bg-primary-container text-on-primary-container p-space-md shadow-xl active:translate-y-1 transition-all flex items-center justify-between overflow-hidden" id="chaosModeBtn">
+<div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="flex items-center gap-3 text-left">
+<div class="w-12 h-12 rounded-lg bg-surface-container-lowest/20 flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-2xl animate-spin" style="animation-duration: 4s;">all_inclusive</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm uppercase tracking-wide leading-tight">ENDLESS CHAOS MODE</span>
+<span class="font-code-metric text-body-sm text-on-primary-container/80 uppercase">UNLOCKED! Unlimited Traps</span>
+</div>
+</div>
+<div class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary-container font-label-badge text-body-sm flex items-center gap-1 shadow-md">
+<span>PLAY</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</button>
+<!-- Secondary Action Grid -->
+<div class="grid grid-cols-2 gap-space-sm w-full">
+<button class="w-full rounded-lg bg-surface-container-high text-on-surface p-space-sm shadow-md active:translate-y-0.5 transition-all flex items-center justify-center gap-2" id="replayBtn">
+<span class="material-symbols-outlined text-secondary-container">replay</span>
+<span class="font-label-badge text-label-badge uppercase">REPLAY 8 STAGES</span>
+</button>
+<button class="w-full rounded-lg bg-secondary-container text-on-secondary-container p-space-sm shadow-md active:translate-y-0.5 transition-all flex items-center justify-center gap-2" id="shareCardBtn">
+<span class="material-symbols-outlined">share</span>
+<span class="font-label-badge text-label-badge uppercase">SHARE CERTIFICATE</span>
+</button>
+</div>
+<!-- Return to Hub -->
+<button class="w-full py-2.5 rounded-lg bg-surface-container text-on-surface-variant font-code-metric text-body-sm uppercase hover:text-on-surface transition-colors flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-base">home</span>
+<span>RETURN TO ARCADE SHELL</span>
+</button>
+</div>
+<!-- Toast Notification Modal for Share / Actions -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 px-4 py-2 rounded-lg bg-secondary-container text-on-secondary-container font-code-metric text-body-sm shadow-2xl opacity-0 pointer-events-none transition-all flex items-center gap-2" id="victoryToast">
+<span class="material-symbols-outlined text-base">verified</span>
+<span id="toastMsg">Victory Certificate Copied to Clipboard!</span>
 </div>
 </div>
 <script>
-  (function () {
-    let eyeOpen = true;
-    let timerVal = 18.4;
-    const theButton = document.getElementById('the-button');
-    const greenBtn = document.getElementById('green-button');
-    const toast = document.getElementById('toast-banner');
-    const toastMsg = document.getElementById('toast-msg');
-    const speech = document.getElementById('speech-bubble-text');
-    const eyeStatus = document.getElementById('eye-status-badge');
-    const lidL = document.getElementById('eyelid-left');
-    const lidR = document.getElementById('eyelid-right');
-    const countdownEl = document.getElementById('countdown');
+  (function() {
+    // Dynamic Confetti Particle Cannon
+    const canvas = document.getElementById('victoryConfettiCanvas');
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+      const colors = ['#ffd027', '#00eefc', '#ffdad6', '#ffffff', '#ffeded', '#efc110'];
 
-    const phrasesOpen = [
-      '"Go ahead, push it! I dare you!"',
-      '"I am wide awake and judging you."',
-      '"I see every pixel of your hesitation."',
-      '"Trust me. What could go wrong? ;)"'
-    ];
-
-    const phrasesClosed = [
-      '"Zzz... totally asleep, do not mind me..."',
-      '"I am looking away! Quickly now!"',
-      '"I see nothing! Zero things!"',
-      '"Shhh... quick, press it now!"'
-    ];
-
-    // Toggle Eye Watching State periodically
-    function toggleEyeState() {
-      eyeOpen = !eyeOpen;
-      if (eyeOpen) {
-        lidL.classList.add('-translate-y-full');
-        lidL.classList.remove('translate-y-0');
-        lidR.classList.add('-translate-y-full');
-        lidR.classList.remove('translate-y-0');
-        eyeStatus.innerHTML = '<span class="w-2 h-2 rounded-full bg-error animate-ping"></span> EYE IS WATCHING';
-        eyeStatus.className = 'font-body-sm text-body-sm text-on-primary-fixed-variant font-bold flex items-center gap-1';
-        speech.textContent = phrasesOpen[Math.floor(Math.random() * phrasesOpen.length)];
-      } else {
-        lidL.classList.remove('-translate-y-full');
-        lidL.classList.add('translate-y-0');
-        lidR.classList.remove('-translate-y-full');
-        lidR.classList.add('translate-y-0');
-        eyeStatus.innerHTML = '<span class="w-2 h-2 rounded-full bg-secondary-container"></span> EYE IS SLEEPING!';
-        eyeStatus.className = 'font-body-sm text-body-sm text-on-secondary-container font-black flex items-center gap-1';
-        speech.textContent = phrasesClosed[Math.floor(Math.random() * phrasesClosed.length)];
+      function resize() {
+        canvas.width = canvas.parentElement.clientWidth;
+        canvas.height = canvas.parentElement.clientHeight;
       }
+      resize();
+      window.addEventListener('resize', resize);
+
+      for (let i = 0; i < 65; i++) {
+        particles.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * (canvas.height * 0.4),
+          size: Math.random() * 6 + 3,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          vx: (Math.random() - 0.5) * 3,
+          vy: Math.random() * 2 + 1.2,
+          rotation: Math.random() * 360,
+          rotSpeed: (Math.random() - 0.5) * 8
+        });
+      }
+
+      function render() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.rotation += p.rotSpeed;
+
+          if (p.y > canvas.height) {
+            p.y = -10;
+            p.x = Math.random() * canvas.width;
+          }
+
+          ctx.save();
+          ctx.translate(p.x, p.y);
+          ctx.rotate((p.rotation * Math.PI) / 180);
+          ctx.fillStyle = p.color;
+          ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size * 0.6);
+          ctx.restore();
+        });
+        requestAnimationFrame(render);
+      }
+      render();
     }
 
-    setInterval(toggleEyeState, 2600);
+    // Share Victory Toast Feedback
+    const shareBtn = document.getElementById('shareCardBtn');
+    const toast = document.getElementById('victoryToast');
+    const toastMsg = document.getElementById('toastMsg');
 
-    // Countdown Timer Loop
-    setInterval(() => {
-      if (timerVal > 0.1) {
-        timerVal -= 0.1;
-        countdownEl.textContent = timerVal.toFixed(1) + 's';
-      } else {
-        countdownEl.textContent = '0.0s';
-      }
-    }, 100);
-
-    // Trap Interaction: Player presses Target Button
-    greenBtn.addEventListener('click', () => {
-      if (eyeOpen) {
-        showFeedback("GOTCHA! You pressed while he was staring right at you!");
-      } else {
-        showFeedback("SAFE CLICK! Stage completed! Unlocking Stage 05...", true);
-      }
-    });
-
-    // Mascot Button Tease
-    theButton.addEventListener('click', () => {
-      showFeedback("OUCH! Hey, don't poke the mascot! Focus on the target!");
-      speech.textContent = '"HEILIGE MACARONI! Do not touch my face!"';
-    });
-
-    // Decoy Switches
-    document.querySelectorAll('.decoy-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        showFeedback("DECOY TRIPPED! That switch does literally nothing.");
-      });
-    });
-
-    document.getElementById('danger-lever').addEventListener('click', () => {
-      showFeedback("SIREN SOUNDS! You almost blew up the cabinet!");
-    });
-
-    document.getElementById('btn-hint').addEventListener('click', () => {
-      speech.textContent = '"HINT: Strike only when my eyes are shut tight!"';
-    });
-
-    document.getElementById('btn-reset').addEventListener('click', () => {
-      showFeedback("Stage reset. Take a deep breath!");
-      timerVal = 18.4;
-    });
-
-    function showFeedback(text, isWin = false) {
+    function showToast(text) {
+      if (!toast) return;
       toastMsg.textContent = text;
-      toast.classList.remove('hidden');
-      if (isWin) {
-        toast.className = 'w-full bg-secondary-container text-on-secondary-fixed p-3 rounded-xl shadow-lg flex items-center justify-between animate-bounce';
-      } else {
-        toast.className = 'w-full bg-error-container text-on-error-container p-3 rounded-xl shadow-lg flex items-center justify-between animate-bounce';
-      }
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
       setTimeout(() => {
-        toast.classList.add('hidden');
-      }, 2500);
+        toast.classList.add('opacity-0', 'pointer-events-none');
+        toast.classList.remove('opacity-100');
+      }, 2400);
+    }
+
+    if (shareBtn) {
+      shareBtn.addEventListener('click', () => {
+        showToast('🏆 Skeptic Certificate Copied! Flaunt Your Paranoia.');
+      });
+    }
+
+    const chaosBtn = document.getElementById('chaosModeBtn');
+    if (chaosBtn) {
+      chaosBtn.addEventListener('click', () => {
+        showToast('🌀 Loading Chaos Chamber... Good luck, Skeptic!');
+      });
+    }
+
+    const replayBtn = document.getElementById('replayBtn');
+    if (replayBtn) {
+      replayBtn.addEventListener('click', () => {
+        showToast('↺ Resetting Chambers 1-8. Trust no one!');
+      });
     }
   })();
-</script></main></body></html>
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.6)]" data-active-classes="text-secondary-container bg-surface-container-high translate-y-[-2px]"><div class="flex justify-around items-center h-16 px-gutter"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 rounded px-space-sm text-on-surface-variant transition-all" data-path="stage-hub" href="#"><span class="material-symbols-outlined text-2xl">sports_esports</span><span class="font-label-badge text-label-badge uppercase tracking-wider mt-0.5">Play</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 rounded px-space-sm text-on-surface-variant transition-all" data-path="stage-selector" href="#"><span class="material-symbols-outlined text-2xl">grid_view</span><span class="font-label-badge text-label-badge uppercase tracking-wider mt-0.5">Levels</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 rounded px-space-sm transition-all text-secondary-container bg-surface-container-high translate-y-[-2px]" data-path="trophy-room" href="#"><span class="material-symbols-outlined text-2xl">military_tech</span><span class="font-label-badge text-label-badge uppercase tracking-wider mt-0.5">Badges</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 rounded px-space-sm text-on-surface-variant transition-all" data-path="arcade-manual" href="#"><span class="material-symbols-outlined text-2xl">help_outline</span><span class="font-label-badge text-label-badge uppercase tracking-wider mt-0.5">Manual</span></a></div></nav></body></html>
